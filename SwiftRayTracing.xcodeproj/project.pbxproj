@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D510A6DE1D5244E700F25DC2 /* RenderWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D510A6DD1D5244E700F25DC2 /* RenderWindow.swift */; };
 		D58628451D51FF4D0016559D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58628441D51FF4D0016559D /* AppDelegate.swift */; };
 		D58628471D51FF4D0016559D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58628461D51FF4D0016559D /* Assets.xcassets */; };
 		D586284A1D51FF4D0016559D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58628481D51FF4D0016559D /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D510A6DD1D5244E700F25DC2 /* RenderWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderWindow.swift; sourceTree = "<group>"; };
 		D58628411D51FF4D0016559D /* SwiftRayTracing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRayTracing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58628441D51FF4D0016559D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D58628461D51FF4D0016559D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				D58628461D51FF4D0016559D /* Assets.xcassets */,
 				D58628481D51FF4D0016559D /* MainMenu.xib */,
 				D586284B1D51FF4D0016559D /* Info.plist */,
+				D510A6DD1D5244E700F25DC2 /* RenderWindow.swift */,
 			);
 			path = SwiftRayTracing;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D58628451D51FF4D0016559D /* AppDelegate.swift in Sources */,
+				D510A6DE1D5244E700F25DC2 /* RenderWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +289,7 @@
 				D58628501D51FF4D0016559D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
