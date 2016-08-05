@@ -9,7 +9,19 @@
 import Cocoa
 
 class RenderWindow: NSWindow, NSWindowDelegate {
+    var image: NSImage!
+    var imageView: NSImageView!
+    
     func windowDidResize(_ notification: Notification) {
-        NSLog("windowDidResize")
+        draw()
+    }
+    
+    func _init() {
+        imageView = NSImageView()
+        self.contentView?.addSubview(imageView)
+    }
+    
+    func draw() {
+        imageView!.frame = self.contentView!.frame
     }
 }

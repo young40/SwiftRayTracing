@@ -16,6 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         window.delegate = window
+        window._init()
+        window.draw()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
