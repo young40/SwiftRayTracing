@@ -40,7 +40,9 @@ class RenderWindow: NSWindow, NSWindowDelegate {
         
         let start = Date()
         
-        let data = getData1BasePink(w: w, h: h)
+//        let data = getData1BasePink(w: w, h: h)
+        let data = getData2LinerColor(w: w, h: h)
+        
         let dataTime = Date()
         let dataInterval = dataTime.timeIntervalSince(start)
         
@@ -61,6 +63,25 @@ class RenderWindow: NSWindow, NSWindowDelegate {
             var rowData = [Pixel]()
             for _ in 0 ..< width {
                 let v = Pixel(red: 255, green: 192, blue: 203)
+                rowData.append(v)
+            }
+            
+            data.append(rowData)
+        }
+        
+        return data
+    }
+    
+    func getData2LinerColor(w width: Int, h height: Int) -> [[Pixel]] {
+        var data = [[Pixel]]()
+        
+        for y in 0 ..< height {
+            var rowData = [Pixel]()
+            for x in 0 ..< width {
+                let v = Pixel(red: 255*x/width,
+                              green: 255*y/height,
+                              blue: 0)
+                
                 rowData.append(v)
             }
             
