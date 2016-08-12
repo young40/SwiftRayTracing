@@ -23,4 +23,15 @@ struct Pixel {
         a = UInt8(alpha)
     }
     
+    static var black: Pixel {
+        get {
+            return Pixel(red: 0, green: 0, blue: 0)
+        }
+    }
+    
+    static var white: Pixel {
+        get {
+            return Pixel(red: 255, green: 255, blue: 255)
+        }
+    }
 }

@@ -12,6 +12,10 @@
 		D58628451D51FF4D0016559D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58628441D51FF4D0016559D /* AppDelegate.swift */; };
 		D58628471D51FF4D0016559D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58628461D51FF4D0016559D /* Assets.xcassets */; };
 		D586284A1D51FF4D0016559D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58628481D51FF4D0016559D /* MainMenu.xib */; };
+		D5D399591D5E21B5000BD651 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D399551D5E21B5000BD651 /* Camera.swift */; };
+		D5D3995A1D5E21B5000BD651 /* Vec3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D399561D5E21B5000BD651 /* Vec3.swift */; };
+		D5D3995B1D5E21B5000BD651 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D399571D5E21B5000BD651 /* Ray.swift */; };
+		D5D3995C1D5E21B5000BD651 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D399581D5E21B5000BD651 /* Sphere.swift */; };
 		D5E8473B1D54F1F600C1B68D /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8473A1D54F1F600C1B68D /* Pixel.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,10 @@
 		D58628461D51FF4D0016559D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D58628491D51FF4D0016559D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D586284B1D51FF4D0016559D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5D399551D5E21B5000BD651 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Camera.swift; path = SwiftRayTracing.playground/Sources/Camera.swift; sourceTree = SOURCE_ROOT; };
+		D5D399561D5E21B5000BD651 /* Vec3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vec3.swift; path = SwiftRayTracing.playground/Sources/Vec3.swift; sourceTree = SOURCE_ROOT; };
+		D5D399571D5E21B5000BD651 /* Ray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ray.swift; path = SwiftRayTracing.playground/Sources/Ray.swift; sourceTree = SOURCE_ROOT; };
+		D5D399581D5E21B5000BD651 /* Sphere.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sphere.swift; path = SwiftRayTracing.playground/Sources/Sphere.swift; sourceTree = SOURCE_ROOT; };
 		D5E8473A1D54F1F600C1B68D /* Pixel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +71,10 @@
 				D510A6DD1D5244E700F25DC2 /* RenderWindow.swift */,
 				D5E8473A1D54F1F600C1B68D /* Pixel.swift */,
 				D518525C1D550E1B001E8E94 /* DoubleExtension.swift */,
+				D5D399561D5E21B5000BD651 /* Vec3.swift */,
+				D5D399571D5E21B5000BD651 /* Ray.swift */,
+				D5D399581D5E21B5000BD651 /* Sphere.swift */,
+				D5D399551D5E21B5000BD651 /* Camera.swift */,
 			);
 			path = SwiftRayTracing;
 			sourceTree = "<group>";
@@ -140,8 +152,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D518525D1D550E1B001E8E94 /* DoubleExtension.swift in Sources */,
+				D5D399591D5E21B5000BD651 /* Camera.swift in Sources */,
 				D58628451D51FF4D0016559D /* AppDelegate.swift in Sources */,
+				D5D3995B1D5E21B5000BD651 /* Ray.swift in Sources */,
 				D5E8473B1D54F1F600C1B68D /* Pixel.swift in Sources */,
+				D5D3995A1D5E21B5000BD651 /* Vec3.swift in Sources */,
+				D5D3995C1D5E21B5000BD651 /* Sphere.swift in Sources */,
 				D510A6DE1D5244E700F25DC2 /* RenderWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
