@@ -9,9 +9,9 @@
 import Foundation
 
 // 点乘运算符
-infix operator .* {}
+infix operator .*
 // 叉乘运算符
-infix operator ** {}
+infix operator **
 
 public class Vec3 {
     public var x: Float = 0
