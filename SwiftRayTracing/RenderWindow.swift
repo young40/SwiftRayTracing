@@ -184,13 +184,13 @@ class RenderWindow: NSWindow, NSWindowDelegate {
         let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.premultipliedLast.rawValue)
         
         let providerRef = CGDataProvider.init(data: NSData(bytes: pixels,
-                                                           length:pixels.count * sizeof(Pixel.self)))
+                                                           length:pixels.count * MemoryLayout<Pixel>.size))
         
         let cgImage = CGImage.init(width: w,
                                    height: h,
                                    bitsPerComponent: bitsPerComponent,
                                    bitsPerPixel: bitsPerPixel,
-                                   bytesPerRow: w*sizeof(Pixel.self),
+                                   bytesPerRow: w*MemoryLayout<Pixel>.size,
                                    space: rgbColorSpace,
                                    bitmapInfo: bitmapInfo,
                                    provider: providerRef!,
